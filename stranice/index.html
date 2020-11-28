@@ -6,8 +6,10 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="../css/styles.css" type="text/css">
+  <link rel="stylesheet" href="../css/slideshow.css" type="text/css">
 </head>
 <body>
+
 
   <nav class="header">
     <div class="navbar">
@@ -43,73 +45,85 @@
     
 
   <section id="glavni">
+    <!--
     <div class="dobrodosli">
       <h3>Dobrodošli</h3>
     </div>
-        
-    <div class="slideshow">
+    -->
+
+
+
+    <div class="container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="../images/kopaonik3.jpeg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="../images/kop2.webp" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="../images/kop6.webp" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="../images/starapl1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="../images/starapl7.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="../images/zlat4.jpg" style="width:100%">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption">Dobro došli!</p>
+      </div>
+    
+      <!-- Thumbnail images -->
       <div class="row">
-        <div class="col-md-12">
-          <div id="gallery">
-            <a href=""><img src="../img/pariz2.jpg" alt="Moskva" /></a>
-            <a href=""><img src="../img/pariz2.jpg" alt="Pariz" /></a>
-            <a href="../img/pariz2.jpg"><img src="../img/pariz2.jpg" alt="Pariz" /></a>
-            <a href="../img/pariz3.jpg"><img src="../img/pariz3.jpg" alt="Pariz" /></a>
-      
-            <a href="../img/moskva.jpg"><img src="../img/moskva.jpg" alt="Moskva" /></a>
-            <a href="../img/moskva2.jpg"><img src="../img/moskva2.jpg" alt="Moskva" /></a>
-            <a href="../img/moskva3.jpg"><img src="../img/moskva3.jpg" alt="Moskva" /></a>
-      
-            <a href="../img/amsterdam1.jpg"><img src="../img/amsterdam1.jpg" alt="Amsterdam" /></a>
-            <a href="../img/amsterdam2.jpg"><img src="../img/amsterdam2.jpg" alt="Amsterdam" /></a>
-            <a href="../img/amsterdam3.jpg"><img src="../img/amsterdam3.jpg" alt="Amsterdam" /></a>
-      
-            <a href="../img/bali1.jpg"><img src="../img/bali1.jpg" alt="Bali" /></a>
-            <a href="../img/bali2.jpg"><img src="../img/bali2.jpg" alt="Bali" /></a>
-            <a href="../img/bali3.jpg"><img src="../img/bali3.jpg" alt="Bali" /></a>
-      
-            <a href="../img/dubai1.jpg"><img src="../img/dubai1.jpg" alt="Dubai" /></a>
-            <a href="../img/dubai2.jpg"><img src="../img/dubai2.jpg" alt="Dubai" /></a>
-            <a href="../img/dubai3.jpg"><img src="../img/dubai3.jpg" alt="Dubai" /></a>
-      
-            <a href="../img/havana.jpg"><img src="../img/havana.jpg" alt="Havana" /></a>
-            <a href="../img/havana1.jpg"><img src="../img/havana1.jpg" alt="Havana" /></a>
-            <a href="../img/havana2.jpg"><img src="../img/havana2.jpg" alt="Havana" /></a>
-      
-            <a href="../img/lisabon.jpg"><img src="../img/lisabon.jpg" alt="Lisabon" /></a>
-            <a href="../img/lisabon1.jpg"><img src="../img/lisabon1.jpg" alt="Lisabon" /></a>
-            <a href="../img/lisabon2.jpg"><img src="../img/lisabon2.jpg" alt="Lisabon" /></a>
-      
-            <a href="../img/madrid1.jpg"><img src="../img/madrid1.jpg" alt="Madrid" /></a>
-            <a href="../img/madrid2.jpg"><img src="../img/madrid2.jpg" alt="Madrid" /></a>
-            <a href="../img/madrid3.jpg"><img src="../img/madrid3.jpg" alt="Madrid" /></a>
-      
-            <a href="../img/maldives.jpg"><img src="../img/maldives.jpg" alt="Maldivi" /></a>
-            <a href="../img/maldivi1.jpg"><img src="../img/maldivi1.jpg" alt="Maldivi" /></a>
-            <a href="../img/maldivi2.jpg"><img src="../img/maldivi2.jpg" alt="Maldivi" /></a>
-      
-            <a href="../img/maroko1.jpg"><img src="../img/maroko1.jpg" alt="Maroko" /></a>
-            <a href="../img/maroko2.jpg"><img src="../img/maroko2.jpg" alt="Maroko" /></a>
-            <a href="../img/maroko3.jpg"><img src="../img/maroko3.jpg" alt="Maroko" /></a>
-      
-            <a href="../img/rim1.jpg"><img src="../img/rim1.jpg" alt="Rim" /></a>
-            <a href="../img/rim2.jpg"><img src="../img/rim2.jpg" alt="Rim" /></a>
-            <a href="../img/rim3.jpg"><img src="../img/rim3.jpg" alt="Rim" /></a>
-      
-            <a href="../img/tajland1.jpg"><img src="../img/tajland1.jpg" alt="Tajland" /></a>
-            <a href="../img/tajland2.jpg"><img src="../img/tajland2.jpg" alt="Tajland" /></a>
-            <a href="../img/tajland3.jpg"><img src="../img/tajland3.jpg" alt="Tajland" /></a>
-          </div>
-          <script type="text/javascript">
-            $( function() {
-              $( '#gallery' ).jGallery();
-              } );
-          </script>
-                    
+        <div class="column">
+          <img class="demo cursor" src="../images/kopaonik3.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Kopaonik">
         </div>
-                
+        <div class="column">
+          <img class="demo cursor" src="../images/kop2.webp" style="width:100%" onclick="currentSlide(2)" alt="Kopaonik">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/kop6.webp" style="width:100%" onclick="currentSlide(3)" alt="Kopaonik">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/starapl1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Stara planina">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/starapl1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Stara planina">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../images/zlat4.jpg" style="width:100%" onclick="currentSlide(6)" alt="Zlatibor">
+        </div>
       </div>
     </div>
+
+    
+    <script src="../js/javascript.js"></script>
+
+    
+        
+    
     <div class="paragraf">
       <p>Tekst</p>
     </div>

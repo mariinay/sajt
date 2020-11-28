@@ -106,10 +106,4 @@ body {
     justify-content: end;
   }
 
-  .navbar{
-      width: 100vh;
-      display: flex;
-      justify-content: flex;
-      align-items: center;
-
-  }
+  
