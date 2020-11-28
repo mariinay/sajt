@@ -1,0 +1,65 @@
+.row{
+    display: flex;
+  }
+
+  .left-column{
+    flex:1;
+    padding-left: 100px;  
+  }
+
+  .right-column{
+    flex:1;
+    
+  }
+
+.date{
+  display: flex;
+}
+.column-small-left{
+  padding-left:10px;
+  padding-right: 80px;
+  border-radius: 3px;
+}
+.column-small-right{
+  border-radius: 3px;;
+}
+
+.passengers{
+  display: flex;
+}
+.column-right-small-l{
+  padding-left: 10px;
+ 
+}
+.column-right-small-l input{
+  width:30%;
+  
+}
+.column-right-small-r input{
+  width:30%;
+}
+.column-right-small-b{
+  flex:1;
+  padding-top: 17px;
+}
+
+.form-group input{
+  width:70%;
+  border-radius: 3px;
+}
+
+.form-group textarea{
+  width:70%;
+  border-radius: 3px;
+}
+
+
+#kartica{
+  display: flex;
+}
+.photos img{
+  flex:33.33%;
+  width: 80px;
+  height: 80px;
+}
+
