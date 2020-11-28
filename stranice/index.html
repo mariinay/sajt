@@ -3,46 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MMA</title>
 
   <link rel="stylesheet" href="../css/styles.css" type="text/css">
   <link rel="stylesheet" href="../css/slideshow.css" type="text/css">
 </head>
 <body>
 
+  <header id="header">
+    <div class="container">
 
-  <nav class="header">
-    <div class="navbar">
-      <div class="button">
-
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toogle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          
-        <a class="navbar-brand" href="#">Travel Agency</a>
-
+      <div id="logo" class="logo">
+        <a href="./index.html" class="pocetna"><img src="../img/logo.png" alt="logo" ></a>
       </div>
-      <div id="navbar" class="stranice">
+
+      <nav class="navmeni-container">
         <ul class="meni">
-          <li class="active"><a href="./index.html"><span class="glyphicon glyphicon-home"> </span>Početna</a></li>
-          <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="./destinacije.html"><span class="glyphicon glyphicon-plane" ></span>Destinacije<span class="caret"></span></a>
-            <ul class="dropdown-menu">
+          <li class="active"><a href="./index.html">Početna</a></li>
+          <li class="dropdown"><a href="./destinacije.html">Destinacije</a>
+            <ul class="dropdown-meni">
               <li><a href="./zlatibor.html">Zlatibor</a></li>
               <li><a href="./kopaonik.html">Kopaonik</a></li>
               <li><a href="./straraplanina.html">Stara planina</a></li>
+              
             </ul>
           </li>
-          <li><a href="./rezervacije.html">Rezervacije</a></li>
-          <li><a href="./kontakt.html"><span class="glyphicon glyphicon-book"></span>Kontakt</a></li>
+          
+          <li><a href="rezervacije.html">Rezervacije</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+
+          
         </ul>
-      </div>
-    </div>>
-  </nav>
-    
+      </nav>
+    </div>
+  </header>
+
+
 
   <section id="glavni">
     <!--
@@ -130,7 +126,7 @@
   </section>
 
   <a href="#" class="back-to-top"><i class="up"></i></a>
-    
+ 
     
   <footer id="footer">
     <div class="meni-footer">
@@ -219,13 +215,8 @@
       $('#calendar-7').calendar({color: 'pink', date: calendar7});
 
 
-    </script>
+    </script>-->
           
-      
-    <div class="copyright">
-      &copy; Copyright <strong>NMN</strong>. All Rights Reserved
-        
-    </div>
-  </footer> 
+  
 </body>
 </html>
