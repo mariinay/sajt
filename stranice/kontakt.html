@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,6 +7,38 @@
     <title>Kontakt</title>
 </head>
 <body>
+
+    <nav class="header">
+        <div class="navbar">
+          <div class="button">
+    
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toogle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              
+            <a class="navbar-brand" href="#">Travel Agency</a>
+    
+          </div>
+          <div id="navbar" class="stranice">
+            <ul class="meni">
+              <li class="active"><a href="./index.html"><span class="glyphicon glyphicon-home"> </span>Početna</a></li>
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="./destinacije.html"><span class="glyphicon glyphicon-plane" ></span>Destinacije<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./zlatibor.html">Zlatibor</a></li>
+                  <li><a href="./kopaonik.html">Kopaonik</a></li>
+                  <li><a href="./straraplanina.html">Stara planina</a></li>
+                </ul>
+              </li>
+              <li><a href="./rezervacije.html">Rezervacije</a></li>
+              <li><a href="./kontakt.html"><span class="glyphicon glyphicon-book"></span>Kontakt</a></li>
+            </ul>
+          </div>
+        </div>>
+      </nav>
 
     
     <div class="Kontakt">
@@ -41,33 +75,31 @@
             
                                     
 			
-		<div class="formular">
-			<h3>Kontakt formular</h3>
+	<div class="formular">
+
+		<h3>Kontakt formular</h3>					
 				
-				
-								
-				
-				<form name="formularKontakt" >
+		<form name="formularKontakt" >
 				
 					
-					<input name="ime" type="text"  placeholder="Ime i prezime (obavezno)"  required>
-					<input name="address" type="text" placeholder="Adresa" >
-                    <input name="postanskiBr" type="number" placeholder="Poštanski broj"  style="width: 20%;">
-                    <input name="grad" type="text" placeholder="Grad"  style="width: 68%;">
+			<input name="ime" type="text"  placeholder="Ime i prezime (obavezno)"  required>
+			<input name="address" type="text" placeholder="Adresa" >
+            <input name="postanskiBr" type="number" placeholder="Poštanski broj"  style="width: 20%;">
+            <input name="grad" type="text" placeholder="Grad"  style="width: 68%;">
 					
-					<input name="phone" type="text" placeholder="Telefon" >
-					<input name="email" type="text" placeholder="Email (obavezno)"  required> 
-                    <textarea name="comment"  placeholder="Komentar (obavezno)" required></textarea> <br>
+			<input name="phone" type="text" placeholder="Telefon" >
+			<input name="email" type="text" placeholder="Email (obavezno)"  required> 
+            <textarea name="comment"  placeholder="Komentar (obavezno)" required></textarea> <br>
 
 				 
 					
-					<br>
+			<br>
                                         
-                                        <input type="submit" value="Pošalji" id="dugmeSubmit" >
-                                        <input type="reset" value="Obrisi" id="dugmeObrisi">
+            <input type="submit" value="Pošalji" id="dugmeSubmit" >
+            <input type="reset" value="Obrisi" id="dugmeObrisi">
 
-				</form>
-			</div>
+		</form>
+	</div>
             
             
             
