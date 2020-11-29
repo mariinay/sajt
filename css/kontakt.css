@@ -1,1 +1,155 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.kontaktirajte{
+    flex:1;
+    padding-left: 70px;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .formular{
+    padding-left: 70px;  
+    flex:1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+
+  .small-right{
+    padding-left:22px;
+    padding-right: 80px;
+    border-radius: 3px;
+    
+  }
+
+  h1{
+      color: rgb(43, 42, 42);
+     font-size:11mm;
+  }
+
+ .mma {
+    color: rgb(43, 42, 42);
+margin-bottom: 0ch;
+
+
+  }
+
+  a{
+      color: rgb(4, 65, 65);
+  }
+  a:hover{
+      color: indigo;
+  }
+  
+
+.formular{
+    margin-top: 15mm;
+padding-left:10% ;
+padding-right:10% ;
+}
+
+
+h2{
+    color: rgb(70, 68, 68);
+}
+.ime  {
+    width: 100%;
+    border-radius: 1mm;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+}
+
+
+.address   {
+    width: 100%;
+    border-radius: 1mm;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+}
+.phone{
+    width: 100%;
+    border-radius: 1mm;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+
+}
+.email{
+    width: 100%;
+    border-radius: 1mm;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+}
+
+.postanskiBr{
+    border-radius: 1mm;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+}
+.grad{
+    width: 100%;
+ 
+    border-radius: 1mm;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+}
+.comment{
+    width: 100%;
+    border-radius: 1mm;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+}
+
+input[type=submit]{
+
+ background-color:rgb(4, 65, 65);
+color: lavender;
+border-radius: 2mm;
+}
+input[type=reset]{
+
+    background-color:rgb(4, 65, 65);
+   color: lavender;
+   border-radius: 2mm;
+   }
+
+input[type=submit]:hover{
+    background-color:rgb(7, 122, 122);
+    
+   }
+input[type=reset]:hover{
+   
+   background-color:rgb(7, 122, 122);
+   }
+   
+.dugmici:hover{
+    align-self: center;
+
+}
+
+
+  @media (max-width:800px){
+      .flex-container{
+          flex-direction: column;
+      }
+  }
