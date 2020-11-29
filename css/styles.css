@@ -35,7 +35,7 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: rgb(7,122,122);
 }
 
 .dropdown-content {
@@ -108,14 +108,9 @@
   color: white;
   font-size: large;
   text-transform: uppercase;
-  position: relative;
+  text-align: center;
 }
-#footer .footer-div .meni-footer h4{
-  padding-left: 30px;
-}
-#footer .footer-div .kontakt-footer h4{
-  padding-left: 25px;
-}
+
 #footer .footer-div .meni-footer ul a{
   color: white;
   text-decoration: none;
@@ -123,7 +118,7 @@
   font-family: "Montserrat", sans-serif;
 }
 #footer .footer-div .meni-footer ul a:hover{
-  color: red;
+  color: rgb(7,122,122);
 }
 
 #footer .footer-div .meni-footer ul li {
@@ -149,9 +144,7 @@
   flex:1;
 }
 
-#footer .footer-div .primedbe h4{
-  padding-right:70px;
-}
+
 
 #footer .footer-div .primedbe p{
   color: white;
@@ -165,11 +158,13 @@
 .potencijalni-kalendar{
   flex:1;
 }
+.social-links{
+  margin-left: 30px;
+}
 .social-links img{
   width:30px;
   height: 30px;
-  padding-top: 5px;
-  padding-left:25px ;
+  
 }
 
 body{
