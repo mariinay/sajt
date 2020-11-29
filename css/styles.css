@@ -1,11 +1,8 @@
 
-body {
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  background: rgb(243, 239, 239);
-  color: #353434;;
-  font-family: "Open Sans", sans-serif;
+/*body {
+    background: rgb(255, 255, 255);
+    color: #0f0d0d;
+    font-family: "Open Sans", sans-serif;
   }
 
   a {
@@ -32,8 +29,8 @@ body {
 
 #header {
   
-  overflow: auto;
-   padding: 15px;
+    overflow: auto;
+    padding: 15px;
     height: 30px;
     position: fixed;
     left: 0;
@@ -188,47 +185,92 @@ a:hover, a:active, a:focus {
     margin: 0 50px 30px 0;
     
   }
-  
- 
 
-  
-
-  .meni, .meni * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .meni ul {
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    z-index: 99;
-  }
-  
-  .meni li {
-    position: relative;
-    white-space: nowrap;
-  }
-  
-  .meni > li {
-    float: left;
-  }
-  
-  .meni li:hover > ul,
-  .meni li.sfHover > ul {
-    display: block;
-  }
-  
-  .meni ul ul {
-    top: 100%;
-    left: 100%;
-  }
-  
-  .meni ul li {
-    min-width: 180px;
-  }
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
- 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  
+.logo img{
+  width:50px;
+  height:50px;
+}
+
+.navbar{
+  display: flex;
+  background-color: rgb(4, 65, 65);
+}
+
+.menu{
+  justify-content: flex-end;
+  padding-top: 18px;
+  
+}
+.logo{
+  flex:1;
+}
+
+.logo-ime{
+  padding-top: 18px;
+}

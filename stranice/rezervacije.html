@@ -5,118 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezervacija</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/rezervacije.css" type="text/css">
 </head>
 <body>
 
-    <nav class="header">
-        <div class="navbar">
-          <div class="button">
-  
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toogle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            
-            <a class="navbar-brand" href="#">Travel Agency</a>
-          </div>
-          <div id="navbar" class="stranice">
-            <ul class="meni">
-              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> </span>Početna</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="./destinacije.html"><span class="glyphicon glyphicon-plane" ></span>Destinacije<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./zlatibor.html">Zlatibor</a></li>
-                  <li><a href="./kopaonik.html">Kopaonik</a></li>
-                  <li><a href="./straraplanina.html">Stara planina</a></li>
-                </ul>
-              </li>
-              <li><a href="./rezervacije.html">Rezervacije</a></li>
-              <li><a href="./kontakt.html"><span class="glyphicon glyphicon-book"></span>Kontakt</a></li>
-            </ul>
-          </div>
+    <header id="header">
+        <div class="header-container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="../images/mma.png" alt="Logo"> </a>
+                    <div class="logo-ime"><a href="index.html">MMA apartments</a></div>
+                </div>
+                <div class="menu">
+                    <a href="index.html">Početna</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Destinacije 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="zlatibor.html">Zlatibor</a>
+                            <a href="kopaonik.html">Kopaonik</a>
+                            <a href="staraplanina.html">Stara planina</a>
+                        </div>
+                    </div> 
+                    
+                    <a href="rezervacije.html">Rezervacija</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
             </div>
-    </nav>
+        </div>
 
+    </header>
+        
 
-    <section>
-        <form id="form">
-          <label for="name">Ime i prezime:</label>
-          <input type="text" id="name" name="name" required>
-          <br>
-          <label for="phone">Telefon:</label>
-          <input type="tel" id="phone" name="phone" placeholder="65 111 222"pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" required>
-          <br>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email required">
-          <br>
+   
 
-            <div id="destination">
-                <label for=destination>Destinacija:</label>
-                <input id="destination" list="destinations" name="destinations" required>
-                <datalist id="destinations">
-                    <option value="Zlatibor">
-                    <option value="Kopaonik">   
-                    <option value="Stara planina">
-                </datalist>
+    
+    <div class="container">
+        <div class="row">
+            <div class="left-column">
+                
+                <div class="form-group">
+                    <label for="name">Ime *</label>
+                    <br>
+                    <input type="text" id="name" required>
+                </div>
+                    <br>
+                <div class="form-group">
+                    <label for="email" id="email">Email *</label>
+                    <br>
+                    <input type="email" id="email" required>
+                </div>
+                    <br>
+                <div class="form-group">
+                    <label for="destination" >Destinacija *</label>
+                    <br>
+                    <input id="destination" list="destinations" name="destinations" required>
+                        <datalist id="destinations">
+                            <option value="Zlatibor">
+                            <option value="Kopaonik">   
+                            <option value="Stara planina">
+                        </datalist>
+                </div>   
+                <br>
+                <div class="date">
+                    <div class="column-small-left">
+                        <label for="polazak">Polazak *</label>
+                        <br>
+                        <input type="date" id="polazak" min="2020-18-12" required>
+                    </div>
+                    <div class="column-small-right">
+                        <label for="povratak">Povratak *</label>
+                        <br>
+                        <input type="date" id="povratak" required>
+                    </div>
+                </div>  
+                <br>
+                <div class="form-group">
+                    <label for="napomena">Napomena</label>
+                    <br>
+                    <textarea id="napomena" rows=6 columns=76></textarea>
+                </div>
             </div>
-            <br>
+            <div class="right-column">
 
-            <div id="vreme">
-                <label for="polazak">Polazak:</label>
-                <input type="date" id="polazak" name="polazak" required> 
-                <label for="dolazak">Dolazak:</label>
-                <input type="date" id="dolazak" name="dolazak" required> 
+                <div class="form-group">
+                    <label for="lastname">Prezime *</label>
+                    <br>
+                    <input type="text" id="lastname" required>
+                </div>
+                    <br>
+                <div class="form-group">
+                    <label for="phone">Telefon *</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" placeholder="65 111 222"pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" required>
+                </div>
+                <br>
+                   <div class="passengers">
+                    <div class="column-right-small-l">
+                        <label for=odrasli-id>Odrasli:</label>
+                        <br>
+                        <input id="odrasli-id" list="odrasli" name="odrasli" required>
+                            <datalist id="odrasli">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5+">
+                            </datalist>
+                    </div>
+                    <div class="column-right-small-r">
+                        <label for=deca-id>Deca:</label>
+                        <br>
+                        <input id="deca-id" list="deca" name="deca" required>
+                            <datalist id="deca">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5+">
+                            </datalist>
+                    </div>
+                    <div class="column-right-small-b">
+                        <input type="checkbox" id="bebe" name="bebe" value="bebe">
+                        <label for="bebe">Bebe(do 2 godine)</label> 
+                    </div>
+                    </div>
+                <br>
+                <div class="form-group">
+                    <label for="kartica">Unesite broj kartice:</label>
+                    <br>
+                    <input type="number" id="kartica" name="kartica">
+                </div>
+                    <div id="kartica">
+                        <div class="photos">
+                            <input type="radio" name="card" id="MasterCard" value="MasterCard">
+                            <label for="MasterCard"> <img src="../images/master.png" alt="MasterCard"></label>
+                        </div>
+                        <div class="photos">
+                            <input type="radio" name="card" value="Visa">
+                            <label for="Visa"><img src="../images/visa.png" alt="Visa"> </label>
+                        </div>
+                        <div class="photos">
+                            <input type="radio" name="card" value="Maestro">
+                            <label for="Maestro"><img src="../images/Untitled-1.png" alt="Maestro"></label>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Potvrdi"> 
+                        <input type="reset" value="Poništi">
+                    </div>
+
             </div>
-            <br>
-            
-            <div id="putnici">
-                <label for=odrasli-id>Odrasli:</label>
-                <input id="odrasli-id" list="odrasli" name="odrasli" required>
-                    <datalist id="odrasli">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5+">
-                    </datalist>
 
-                <label for=deca-id>Deca:</label>
-                <input id="deca-id" list="deca" name="deca" required>
-                    <datalist id="deca">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5+">
-                    </datalist>
-                <input type="checkbox" id="bebe" name="bebe" value="bebe">
-                <label for="bebe">Bebe(do 2 godine)</label> 
-            </div>
-            <br> 
 
-            <label for="kartica">Unesite broj kartice:</label>
-            <input type="number" id="kartica" name="kartica">
 
-            <div id="kartica">
-                <input type="radio" name="card" id="MasterCard" value="MasterCard">
-                    <label for="MasterCard"> <img src="/images/mastercard.jpg" alt="MasterCard"></label>
-                <input type="radio" name="card" value="Visa">
-                    <label for="Visa"><img src="/images/visa.png" alt="Visa"> </label>
-                <input type="radio" name="card" value="Maestro">
-                    <label for="Maestro"><img src="/images/Maestro.png" alt="Maestro"></label>
-            </div>
+        </div>
 
-            <div>
-                <input type="submit" value="Potvrdi"> 
-                <input type="reset" value="Poništi">
-            </div>
+    </div>
 
-          
-
-        </form>
-    </section>
+    
       
     <footer id="footer">
     
