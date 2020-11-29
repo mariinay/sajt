@@ -124,94 +124,50 @@
  
     
   <footer id="footer">
-    <div class="meni-footer">
-      <h4>Meni</h4>
-      <ul>
-        <li><i class="ion-ios-arrow-right"></i> <a href="./index.html">Početna</a></li>
-        <li><i class="ion-ios-arrow-right"></i> <a href="./destinacije.html">Destinacije</a></li>
-        <li><i class="ion-ios-arrow-right"></i> <a href="./rezervacije.html">Rezervacije</a></li>
-        <li><i class="ion-ios-arrow-right"></i> <a href="./kontakt.html">Kontakt</a></li>
-      </ul>
-    </div>
-  
-    <div class="kontakt-footer">
 
-      <h4>Adresa</h4>
-      <p>
-        Jove Ilica 154 <br>
-        Beograd, 11000<br>
-        Srbija <br>          
-        <strong>Telefon:</strong> +381 65 333 777<br>
-        <strong>Email:</strong> nmn@gmail.com<br>
-      </p>
-  
-      <div class="social-links">
-        <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>          
-        <a href="https://www.google.com" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
-  
-    </div>
-  
-    <div class="primedbe">
-      <h4>Primedbe</h4>
-      <p>Ukoliko imate neke primedbe, molimo vas da nas kontaktirate. Hvala!</p>  
-    </div>
-  
-    <div class="col-md-6" >
+    <div class="footer-div">
+        <div class="meni-footer">
+            <h4>Meni</h4>
+            <ul>
+                <li><i class="arrow-right"></i> <a href="index.html">Početna</a></li>
+                <li><i class="arrow-right"></i> <a href="destinacije.html">Destinacije</a></li>
+                <li><i class="arrow-right"></i> <a href="rezervacije.html">Rezervacije</a></li>
+                <li><i class="arrow-right"></i> <a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
 
-      <div class="pomeraj"></div>
-      
-      <div id="calendar"></div>
+        <div class="kontakt-footer">
+            <h4>Adresa</h4>
+            <p>
+                Jove Ilića 154 <br>
+                Beograd, 11000<br>
+                Srbija <br>
+                <strong>Telefon:</strong> +381 65 333 777<br>
+                <strong>Email:</strong> mma@gmail.com<br>
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" class="facebook"><img src="../images/facebook.png"></a>
+                <a href="https://www.instagram.com" class="instagram"><img src="../images/instagram.png"></a>
+                <a href="https://www.twitter.com" class="twitter"><img src="../images/twitter-logo.png"></a>
+            </div>
+        </div>
+
+        <div class="primedbe">
+            <h4>Primedbe</h4>
+            <p>Ukoliko imate neke primedbe, molimo vas da nas kontaktirate. Hvala!</p>
+        </div>
+
+        <div class="potencijalni-kalendar">
+            <h4>potencijalni-kalendar</h4>
+        </div>
 
     </div>
 
-    <script>
+    <div class="copyright">
+        &copy; Copyright <strong>MMA</strong>. All Rights Reserved
 
-      var events = [{start: '2017-04-01', end: '2017-04-07', summary: "Example Event", mask: true}, {start: '2017-05-05', end: '2017-05-15', summary: "Example Event #3", mask: true}];
-
-      $('#calendar').calendar({'events': events});
-
-      var calendar1 = new Date();
-      calendar1.setMonth(calendar1.getMonth() - 1);
-
-      $('#calendar-1').calendar({color: 'orange', date: calendar1});
-
-      var calendar2 = new Date();
-      calendar2.setMonth(calendar2.getMonth() + 1);
-
-      $('#calendar-2').calendar({color: 'purple', date: calendar2, events: events});
-
-      var calendar3 = new Date();
-      calendar3.setMonth(calendar3.getMonth() + 2);
-
-      $('#calendar-3').calendar({color: 'yellow', date: calendar3});
-
-      var calendar4 = new Date();
-      calendar4.setMonth(calendar4.getMonth() + 3);
-
-      $('#calendar-4').calendar({color: 'blue', date: calendar4});
-
-      var calendar5 = new Date();
-      calendar5.setMonth(calendar5.getMonth() + 4);
-
-      $('#calendar-5').calendar({color: 'green', date: calendar5});
-
-      var calendar6 = new Date();
-      calendar6.setMonth(calendar6.getMonth() + 5);
-
-      $('#calendar-6').calendar({color: 'grey', date: calendar6});
-
-      var calendar7 = new Date();
-      calendar7.setMonth(calendar7.getMonth() + 5);
-
-      $('#calendar-7').calendar({color: 'pink', date: calendar7});
-
-
-    </script>-->
-  </footer>
+    </div>
+</footer> 
           
   
 </body>
