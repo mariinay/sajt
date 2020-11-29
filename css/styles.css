@@ -1,195 +1,8 @@
-
-/*body {
-    background: rgb(255, 255, 255);
-    color: #0f0d0d;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  a {
-    color:hsl(175, 92%, 48%) ;
-    transition: 0.5s;
-    text-decoration: none;
-  }
-
-  .navmeni-container{
-
-    color: white;
-    display: grid;
-    justify-content: right;
-    grid-gap: 100px;
-    
-    grid-template-columns:auto auto;
-
-  }
-  .navmeni-container ul li{
-    padding:10px;
-  }
-
-
-
-#header {
-  
-    overflow: auto;
-    padding: 15px;
-    height: 30px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 997;
-    background-color: rgb(7, 58, 58);
-  }
-  
-/*******************/
-
-
-
-
-/*.flex-row { 
-	align-content: space-around;
-}
-*/
-
-/*********************/
-
-h4{
-  color: #000;
-}
-#footer {
-  background:rgb(0, 3, 3);
-  color:  rgb(7, 58, 58);
-  
-  font-size: 12px;
-}
-
-#footer .footer-top {
-  background: rgb(7, 58, 58);
-  padding: 300px 30px 30px 0;
-}
-
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
-  border-left: 4px;
-  font-size: 34px;
-  margin: 0 0 20px 0;
-  padding: 20px 0 2px 10px;
-  line-height: 1;
-  font-family:"Open Sans", sans-serif; 
-  font-weight: 700;
-  letter-spacing: 3px;
-
-}
-
-.social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #eee;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-
-#footer .footer-top h4 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 20px;
-}
-
-#footer .footer-top h4::before, #footer .footer-top h4::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-}
-
-#footer .footer-top h4::before {
-  right: 0;
-  background: #555;
-}
-
-
-#footer .copyright {
-  text-align: center;
-  padding-top: 10px;
-}
-
-
-#glavni {
-  margin-top: 80px;
-  padding: 60px 0 40px 0;
-}
-
-
-#glavni::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(247, 245, 245, 0.92);
-  
-}
-
-#glavni .container {
-  position: relative;
-  color: #000;
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  padding: 0;
-  margin: 20px 0 50px 0;
-  line-height: 24px;
-}
-
-
-.section-header h3 {
-  font-size: 32px;
-  color: #111;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-
-
-.section-header p {
-  text-align: center;
-  padding-bottom: 30px;
-  color: #333;
-}
-
-a:hover, a:active, a:focus {
-    color:azure;
-    outline: none;
-    text-decoration: aqua;
-  }
-
-  p {
-    color:hsl(175, 92%, 48%) ;
-    padding: 0;
-    margin: 0 50px 30px 0;
-    
-  }
-
  body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*HEADER*/
 
 .navbar {
   overflow: hidden;
@@ -274,3 +87,99 @@ a:hover, a:active, a:focus {
 .logo-ime{
   padding-top: 18px;
 }
+
+
+
+/*FOOTER*/
+
+
+#footer{
+  background-color: rgb(4, 65, 65);
+  margin-bottom: 0;
+  padding: 0 0 30px 0;
+}
+.footer-div{
+  display: flex;
+  margin-left: 180px;
+  margin-right:180px;
+  padding-top:20px;
+}
+.footer-div h4{
+  color: white;
+  font-size: large;
+  text-transform: uppercase;
+  position: relative;
+}
+#footer .footer-div .meni-footer h4{
+  padding-left: 30px;
+}
+#footer .footer-div .kontakt-footer h4{
+  padding-left: 25px;
+}
+#footer .footer-div .meni-footer ul a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+#footer .footer-div .meni-footer ul a:hover{
+  color: red;
+}
+
+#footer .footer-div .meni-footer ul li {
+  border-bottom: 1px solid rgb(77, 95, 95);
+  padding: 10px 0;
+
+}
+
+.meni-footer{
+  flex:1;
+}
+
+#footer .footer-div .kontakt-footer p{
+  padding-left: 25px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color:white;
+}
+
+.kontakt-footer{
+  flex:1;
+}
+
+#footer .footer-div .primedbe h4{
+  padding-right:70px;
+}
+
+#footer .footer-div .primedbe p{
+  color: white;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.primedbe{
+  flex:1;
+}
+.potencijalni-kalendar{
+  flex:1;
+}
+.social-links img{
+  width:30px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left:25px ;
+}
+
+body{
+  margin:0;
+
+}
+
+#footer .copyright{
+padding-top:50px;
+text-align: center;
+
+}
+
