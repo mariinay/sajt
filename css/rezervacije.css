@@ -63,3 +63,31 @@
   height: 80px;
 }
 
+
+input[type=submit]{
+
+  background-color:rgb(4, 65, 65);
+ color: lavender;
+ border-radius: 2mm;
+ }
+ input[type=reset]{
+ 
+     background-color:rgb(4, 65, 65);
+    color: lavender;
+    border-radius: 2mm;
+    }
+ 
+ input[type=submit]:hover{
+     background-color:rgb(7, 122, 122);
+     
+    }
+ input[type=reset]:hover{
+    
+    background-color:rgb(7, 122, 122);
+    }
+    
+ .dugmici:hover{
+     align-self: center;
+ 
+ }
+ 

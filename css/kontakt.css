@@ -60,7 +60,7 @@ h2{
 }
 .ime  {
     width: 100%;
-    
+    border-radius: 1mm;
     padding-top: 6px;
     padding-bottom: 6px;
     
@@ -71,7 +71,7 @@ h2{
 
 .address   {
     width: 100%;
-    
+    border-radius: 1mm;
     padding-top: 6px;
     padding-bottom: 6px;
     
@@ -80,7 +80,7 @@ h2{
 }
 .phone{
     width: 100%;
-    
+    border-radius: 1mm;
     padding-top: 6px;
     padding-bottom: 6px;
     margin-top: 2mm;
@@ -89,7 +89,7 @@ h2{
 }
 .email{
     width: 100%;
-    
+    border-radius: 1mm;
     padding-top: 6px;
     padding-bottom: 6px;
     
@@ -98,7 +98,7 @@ h2{
 }
 
 .postanskiBr{
-   
+    border-radius: 1mm;
     padding-top: 6px;
     padding-bottom: 6px;
     
@@ -108,7 +108,7 @@ h2{
 .grad{
     width: 100%;
  
-   
+    border-radius: 1mm;
     padding-top: 6px;
     padding-bottom: 6px;
     
@@ -117,7 +117,7 @@ h2{
 }
 .comment{
     width: 100%;
-    
+    border-radius: 1mm;
     padding-top: 6px;
     padding-bottom: 6px;
     
