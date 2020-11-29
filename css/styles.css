@@ -185,51 +185,6 @@ a:hover, a:active, a:focus {
     margin: 0 50px 30px 0;
     
   }
-  
- 
-
-  
-
-  .meni, .meni * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .meni ul {
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    z-index: 99;
-  }
-  
-  .meni li {
-    position: relative;
-    white-space: nowrap;
-  }
-  
-  .meni > li {
-    float: left;
-  }
-  
-  .meni li:hover > ul,
-  .meni li.sfHover > ul {
-    display: block;
-  }
-  
-  .meni ul ul {
-    top: 100%;
-    left: 100%;
-  }
-  
-  .meni ul li {
-    min-width: 180px;
-  }
-
-
-  
- 
 
  body {
   font-family: Arial, Helvetica, sans-serif;
