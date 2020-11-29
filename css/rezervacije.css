@@ -1,3 +1,10 @@
+body{
+  background-color: rgb(181, 240, 240);
+}
+.container{
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
 .row{
     display: flex;
   }
@@ -91,3 +98,12 @@ input[type=submit]{
  
  }
  
+h3{
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+
+}
+h4{
+  text-align: center;
+}
