@@ -69,7 +69,54 @@
       <a href="https://www.instagram.com/instagram/?hl=sr"><img  src="../images/instagram.png" alt="facebook" width="30" height="30"></a>
       <a href="https://www.facebook.com/facebookapp"><img  src="../images/facebook.png" alt="facebook" width="30" height="30"> </a>
       <a href="https://www.twitter.com" ><img src="../images/twitter-logo.png" alt="twitter" width="30" height="30"></a>      
+    <br>
+    <br>
+
+    <!--MODAl--------------------->     
     
+    <button id="myBtn">Dodatne informacije</button>
+
+
+    <div id="myModal" class="modal">
+
+         <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 id="di">Dodatne informacije</h2>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the Modal Body</p>
+              
+            </div>
+            
+          </div>
+  
+  </div>
+    
+    
+    <script>
+        var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+    
+
+<!-------------------Kraj modalaaa------------------------->
+    
+
+
     </div>
   </div>  
             
@@ -79,10 +126,10 @@
 		 <h2>Kontakt formular</h2>					
 				
 		 <div class="sekcija2">
-        <form name="formularKontakt" >
+        <form name="formularKontakt"  >
 				
 					
-			<input class="ime" type="text"  placeholder="Ime i prezime (obavezno)"  required><br>
+			<input class="ime"  type="text"  placeholder="Ime i prezime (obavezno)" required><br>
 			<input class="address" type="text" placeholder="Adresa" ><br>
             <input class="postanskiBr" type="number" placeholder="Poštanski broj"  style="width: 20%;">
             <input class="grad" type="text" placeholder="Grad"  style="width: 68%;"><br>
@@ -95,13 +142,26 @@
 					
       
             <div class=dugmici>                           
-      <input type="submit" value="Potvrdi" id="dugmeSubmit" >
+      <input type="submit" value="Potvrdi" id="dugmeSubmit" onclick="fja_confirmDa()" >
     
-      <input type="reset" value="Poništi" id="dugmeObrisi">
-     
+      <input type="reset" value="Poništi" id="dugmeObrisi" onclick="fja_confirmNe()" >
+     <script>
+
+      
+
+        function fja_confirmDa(){
+   
+            confirm("Da li ste sigurni da želite da potvrdite?");
+        }
+        function fja_confirmNe(){
+             confirm("Da li ste sigurni da želite da poništite?");
+        }
+     </script>
+
     </div> 
     </div>
      </form>
+    
      <br>
 	 </div>
   </div>  

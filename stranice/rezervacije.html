@@ -157,11 +157,19 @@
                     <br>
                   
                     <div class=dugmici>                           
-                        <input type="submit" value="Potvrdi" id="dugmeSubmit" >
+                        <input type="submit" value="Potvrdi" id="dugmeSubmit" onclick="fja_confirmDa()" >
                       
-                        <input type="reset" value="Poništi" id="dugmeObrisi">
+                        <input type="reset" value="Poništi" id="dugmeObrisi" onclick="fja_confirmNe()">
                       </div> 
 
+                      <script>
+                        function fja_confirmDa(){
+                            confirm("Da li ste sigurni da želite da potvrdite?");
+                        }
+                        function fja_confirmNe(){
+                            confirm("Da li ste sigurni da želite da poništite?");
+                        }
+                             </script>
             </div>
 
 
