@@ -1,0 +1,11 @@
+.destinacije{
+    width: 100%;
+    padding: 10px;
+}
+
+.dest{
+    display: inline-flex;
+    width: 200px;
+    height: auto;
+    justify-content: space-around;
+}

@@ -21,6 +21,7 @@
 
   .column img {
     height: 80px;
+    margin: auto;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
