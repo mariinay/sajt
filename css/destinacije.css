@@ -1,0 +1,48 @@
+.box{
+    box-sizing: border-box;
+    background-color: white;
+    border-style: solid;
+    border-color:rgb(4, 65, 65);
+    border-width: 5px   ;
+    width: 300px;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.kutija{
+    display: inline-flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.karakteristike{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.rez{
+    padding-bottom: 10px;
+}
+
+#btn{
+    background-color:rgb(4, 65, 65);
+    color:white;
+    border-radius: 2mm;
+}
+
+#btn:hover{
+    background-color:rgb(7, 122, 122);
+}
+
+.text p{
+    padding: 10px 10px 10px 10px;
+}
+
+.text{
+    width: 40%;
+    background-color:rgb(4, 65, 65);
+    color: white;
+    border-radius: 2mm;
+}
+
+
