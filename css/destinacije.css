@@ -1,7 +1,26 @@
+.flex{
+    display: flex;
+  margin-left: 150px;
+  margin-right:150px;
+  padding-top:50px;
+  align-content: space-between;
+}
+
+.content{
+    margin-top:0px;
+
+}
+.sadrzaj {
+    align-items: center;
+    text-align: center;
+    
+}
+
 h1{
     color: rgb(4, 65, 65);
     margin-top: 100px;
     margin-left: 10px;
+    text-align: center;
 }
 
 h2{
@@ -18,11 +37,12 @@ h2{
     height: 350px;
     font-size: 16px;
     padding: 0px 0px 5px 5px;
-    margin: 0px 0px 10px 10px;
+    margin: 20px 0px 10px 10px;
 }
 
 .boxes{
     display: flex;
+    
 }
 
 
@@ -62,17 +82,21 @@ a{
     color: lavender;
     text-decoration: none;
 }
+
 .text p{
-    padding: 10px 10px 10px 10px;
+   
+padding: 10px 10px 10px 10px;
     background-color:rgb(4, 65, 65);
     color: white;
     border-radius: 2mm;
 }
 
 .text{
-    width: 50%;
-    padding: 0px 5px 0px 5px;
-    margin: 0px 5px 0px 5px; 
+    width: 80%;
+    padding: 10px 0px 5px 100px;
+    margin-top:0px;
+    margin-left:75px;
+
     text-align: justify;
 }
 
@@ -126,13 +150,16 @@ a{
     background-color: rgb(7, 122, 122);
     color: white;
   }
-  #di{
+ #di{
       color:lavender;
       
   }
   
 
-  .modal-body {padding: 100px}
+.modal-body {
+      padding: 100px
+     
+}
   
   
   /* Modal Content */
@@ -145,7 +172,8 @@ a{
     border: 1px solid #888;
     width: 80%;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+   
   }
   
   .kolone{
@@ -189,5 +217,8 @@ a{
     to {top: 0; opacity: 1}
   }
 
+/*Kraj modala*****************************************/
 
-  /*Kraj modala*****************************************/
+  
+  
+}
