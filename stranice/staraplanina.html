@@ -81,11 +81,10 @@
             <p>Besplatan privatan parking</p>
           </div>
         </div>
-        <div class="kutija rez">
-          <button id="btnRez" ><a href="rezervacije.html"> Rezervišite</a></button>
- <!---------------MODAL-------------------------------->
-          <button id="myBtn">Cenovnik</button>
-
+  <div class="kutija rez">
+    <button id="btnRez" ><a href="rezervacije.html"> Rezervišite</a></button>
+     <!---------------MODAL-------------------------------->
+    <button id="myBtn">Cenovnik</button>
 
     <div id="myModal" class="modal">
 
@@ -95,47 +94,49 @@
               <h2 id="di">Vila Stara planina</h2>
             </div>
             <div class="modal-body">
-              <p>
+              
+               <p><b><i>*U tabeli su prikazane cene u zavisnosti od rezervisanih noćenja</i></b>
+               </p>
+                     <div class="kolone">
+                          <ul class="koloneCene">
+                          <li class="dani">Vikend(2 noći)</li>
+                          <li class="cena">75€/noć</li>
+                         </ul>
+                      </div>
 
+                      <div class="kolone">
+                        <ul class="koloneCene">
+                        <li class="dani">3-7 noćenja</li>
+                        <li class="cena">65€/noć</li>
+                       </ul>
+                    </div>
 
+                    <div class="kolone">
+                      <ul class="koloneCene">
+                      <li class="dani">8-14 noćenja</li>
+                      <li class="cena">50€/noć</li>
+                     </ul>
+                  </div>
 
-
-                
-              </p>
+              
               
             </div>
             
           </div>
   
+    </div>
+    
+    
+    <script src="../js/modal.js"></script>
+    
+    <!-----------Kraj Modala-------------------------->
+
   </div>
-    
-    
-    <script>
-        var modal = document.getElementById("myModal");
+ </div>
 
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-    </script>
-    
-<!-----------Kraj Modala-------------------------->
-
-        </div>
-      </div>
-
-      <div class="box" id="cenovnik">
+      <!--<div class="box" id="cenovnik">
         <h2>CENOVNIK</h2>
-      </div>
+      </div>-->
 
     </div>
 
