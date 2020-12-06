@@ -22,14 +22,13 @@
   
 }
 
+#btnRez{ 
+  background-color:rgb(4, 65, 65);
+  color: lavender;
+  border-radius: 2mm;
 
-
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
- 
 }
+
 
 
 .navbar a {
