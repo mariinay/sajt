@@ -82,7 +82,54 @@
           </div>
         </div>
         <div class="kutija rez">
-          <button id="btn">Rezervišite</button>
+          <button id="btnRez" ><a href="rezervacije.html"> Rezervišite</a></button>
+ <!---------------MODAL-------------------------------->
+          <button id="myBtn">Cenovnik</button>
+
+
+    <div id="myModal" class="modal">
+
+         <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 id="di">Vila Stara planina</h2>
+            </div>
+            <div class="modal-body">
+              <p>
+
+
+
+
+                
+              </p>
+              
+            </div>
+            
+          </div>
+  
+  </div>
+    
+    
+    <script>
+        var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+    
+<!-----------Kraj Modala-------------------------->
+
         </div>
       </div>
 
