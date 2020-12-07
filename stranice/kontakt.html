@@ -45,9 +45,7 @@
 <div class="content">
 		
 	<div class="mapa">
-                
-            <iframe src="https://www.google.com/maps/d/embed?mid=1dRnZkmCsRN-2KFEHv0KqXWDOI7L-kGvx" width="100%" height="480" allowfullscreen
-            ></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1dRnZkmCsRN-2KFEHv0KqXWDOI7L-kGvx" width="100%" height="480"></iframe>
   </div>
                         
   <div class="flex-container">             
@@ -56,13 +54,13 @@
      <div class="small-right"> 
       <p><p class="mma"><strong>MMA apartments</strong></p>
                 
-        Zlatibor adresa.....<br />
+        Zlatibor <br />
         Kopaonik<br />
         Stara planina
         <br />          <br />
         Telefon: <a class="tel" href="tel:+381643320472">+381 65 333 777</a><br />
 
-        Email: <a href="mailto:mmaapartments@gmail.com">mmaapartments@gmail.com</a>
+        Email: <a href="mailto:mma@gmail.com">mmaa@gmail.com</a>
       </p>
       <br>
 
@@ -85,39 +83,30 @@
 		 <h2>Kontakt formular</h2>					
 				
 		 <div class="sekcija2">
-        <form name="formularKontakt"  >
+        <form name="formularKontakt"  onsubmit="return(validacijaForme());"  >
 				
 					
-			<input class="ime"  type="text"  placeholder="Ime i prezime (obavezno)" required><br>
+			<input class="ime" name="ime" type="text"  placeholder="Ime i prezime (obavezno)" required><br>
 			<input class="address" type="text" placeholder="Adresa" ><br>
             <input class="postanskiBr" type="number" placeholder="Poštanski broj"  style="width: 20%;">
             <input class="grad" type="text" placeholder="Grad"  style="width: 68%;"><br>
 					
 			<input class="phone" type="text" placeholder="Telefon" ><br>
-			<input class="email" type="text" placeholder="Email (obavezno)"  required> <br>
-            <textarea class="comment"  placeholder="Komentar (obavezno)" rows="10" cols="70" required></textarea> <br>
+			<input class="email" name="email" type="text" placeholder="Email (obavezno)"  required> <br>
+            <textarea class="comment" name="comment" placeholder="Komentar (obavezno)" rows="10" cols="70" required></textarea> <br>
 
 				 
 					
       
             <div class=dugmici>                           
-      <input type="submit" value="Potvrdi" id="dugmeSubmit" onclick="fja_confirmDa()" >
+               <input type="submit" value="Potvrdi" id="dugmeSubmit" onclick="fja_confirmDa()"  >
     
-      <input type="reset" value="Poništi" id="dugmeObrisi" onclick="fja_confirmNe()" >
-     <script>
+                  <input type="reset" value="Poništi" id="dugmeObrisi" onclick="fja_confirmNe()" >
+     
+                 <script src="../js/confirm.js">
+                    </script>
 
-      
-
-        function fja_confirmDa(){
-   
-            confirm("Da li ste sigurni da želite da potvrdite?");
-        }
-        function fja_confirmNe(){
-             confirm("Da li ste sigurni da želite da poništite?");
-        }
-     </script>
-
-    </div> 
+            </div> 
     </div>
      </form>
     

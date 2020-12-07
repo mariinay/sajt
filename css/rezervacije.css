@@ -109,7 +109,7 @@ h4{
 }
 
 @media (max-width:800px){
-  .flex-container{
+  .container{
       flex-direction: column;
   }
 }
