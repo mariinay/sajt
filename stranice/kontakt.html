@@ -76,15 +76,16 @@
 
     </div>
   </div>  
-            
+  <script src="../js/confirm.js">
+  </script>
+ 
             
   <div class="formular">
 
 		 <h2>Kontakt formular</h2>					
-         <script src="../js/confirm.js">
-         </script>
+         
 		 <div class="sekcija2">
-        <form name="formularKontakt" onsubmit="return(validacijaForme());"   >
+        <form name="formularKontakt"  >
 				
 					
 			<input class="ime" name="ime" type="text"  placeholder="Ime i prezime (obavezno)" required><br>
@@ -100,7 +101,7 @@
 					
       
             <div class=dugmici>                           
-               <input type="submit" value="Potvrdi" id="dugmeSubmit" onclick="fja_confirmDa()"    >
+               <input type="submit" value="Potvrdi" id="dugmeSubmit" onclick="fja_confirmDa()" onclick="return  validacijaForme()"    >
     
                   <input type="reset" value="Poništi" id="dugmeObrisi" onclick="fja_confirmNe()" >
      
