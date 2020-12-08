@@ -1,4 +1,4 @@
-function fja_confirmDa(){
+/*function fja_confirmDa(){
    
     confirm("Da li ste sigurni da želite da potvrdite?");
 }
@@ -19,6 +19,21 @@ function validacijaForme() {
       alert("Unesite komentar");
 
       return false;
-   }else return true;
+   }else 
+   {
+      confirm("Da li ste sigurni da želite da potvrdite?");
+      return true;
+   }
+
+}*/
+
+function validacijaForme(){
+   var ime=document.getElementById('ime').value;
+
+
+if(ime==""){
+   alert('Unesite ime i prezime');
+   return false;
+}
 
 }
