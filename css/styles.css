@@ -208,8 +208,3 @@ text-align: center;
   color:white;
 }
 
-@media (max-width:800px){
-  .flex-container{
-      flex-direction: column;
-  }
-}
