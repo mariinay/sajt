@@ -2,7 +2,7 @@
    /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
-    width: 50%;
+    width: 760px;
     padding: 20px;
     margin-right: 40px;
     
@@ -83,7 +83,6 @@
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
     padding-top: 5px;
   }
 
