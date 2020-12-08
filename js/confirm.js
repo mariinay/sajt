@@ -7,19 +7,19 @@ function fja_confirmNe(){
 }
 
 function validacijaForme() {
-    if( document.formularKontakt.ime.value == "" ) {
+    if( document.getElementsByName('ime').value == "" ) {
         alert("Unesite ime i prezime ");
-        document.myForm.Name.focus() ;
+       
         return false;
      }
-     if( document.formularKontakt.email.value == "" ) {
+     if( document.getElementsByName('email').value == "" ) {
         alert("Unesite email");
-        document.myForm.Name.focus() ;
+       
         return false;
      }
-     if( document.formularKontakt.comment.value == "" ) {
+     if( document.getElementsByName('comment').value == "" ) {
         alert("Unesite komentar");
-        document.myForm.Name.focus() ;
+        
         return false;
      }
      return true ;
