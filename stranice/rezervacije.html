@@ -43,14 +43,14 @@
         
     <div class="content">
     
-        <h3>Dobrodošli</h3>
+        <h3>Dobro došli</h3>
         <h4>Ovde možete da rezervišete vikendicu!</h4> 
     
     <div class="container">
         <div class="row">
             <div class="left-column">
                 
-                <div class="form-group">
+                <div class="form-group" onsubmit="return(validacijaRezervaije()")>
                     <label for="name">Ime *</label>
                     <br>
                     <input type="text" id="name" required>
