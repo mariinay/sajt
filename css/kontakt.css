@@ -61,7 +61,7 @@ padding-right:10% ;
 h2{
     color: rgb(70, 68, 68);
 }
-.ime  {
+#ime  {
     width: 100%;
     border-radius: 1mm;
     padding-top: 6px;
@@ -90,7 +90,7 @@ h2{
     margin-bottom: 2mm;
 
 }
-.email{
+#email{
     width: 100%;
     border-radius: 1mm;
     padding-top: 6px;
@@ -118,7 +118,7 @@ h2{
     margin-top: 2mm;
     margin-bottom: 2mm;
 }
-.comment{
+#comment{
     width: 100%;
     border-radius: 1mm;
     padding-top: 6px;
