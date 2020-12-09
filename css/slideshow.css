@@ -2,7 +2,7 @@
    /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
-    width: 760px;
+    width: 50%;
     padding: 20px;
     margin-right: 40px;
     
