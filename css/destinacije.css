@@ -175,6 +175,10 @@ padding: 10px 10px 10px 10px;
     animation-duration: 0.4s;
    
   }
+
+  .tabela{
+    margin-left: 10%;
+  }
   
   .kolone{
     float: left;
